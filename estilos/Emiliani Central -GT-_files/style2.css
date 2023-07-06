@@ -1,0 +1,478 @@
+/* Start Apphand*/
+section.apphand .backgroundapphand {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #172238;
+  padding: 0px 0px;
+
+}
+
+/* Apphand Fin*/
+
+/* Features */
+
+section.features .col-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.features-post {
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.features-thumb {
+  overflow: hidden;
+  position: relative;
+}
+
+.features-thumb img {
+  width: 100%;
+}
+
+.features-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0c1228;
+  color: #fff;
+  padding: 40px;
+}
+
+.features-content:hover {
+  background-color: #f5a425;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.features-content h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+.features-content h5 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+  text-decoration: none;
+}
+
+.features-content a {
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+
+.features-content h4 i {
+  margin-right: 15px;
+  font-size: 24px;
+}
+
+.features-content h5 i {
+  margin-right: 15px;
+  font-size: 24px;
+}
+
+.features-content p {
+  margin-bottom: 0px;
+}
+
+.features-content a {
+  margin-top: 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 2px solid #fff;
+}
+
+.features-content p.hidden-sm {
+  display: none;
+}
+
+.second-features,
+.third-features {
+  border-left: 1px solid rgba(250, 250, 250, 0.1);
+}
+
+.content-hide {
+  margin-top: 15px;
+  display: none;
+}
+
+.content-hide p {
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+
+  .features-content {
+    padding: 15px;
+  }
+
+  .features-content h4 i {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .features-content h4 {
+    font-size: 14px;
+  }
+
+  .features-content p {
+    display: none;
+  }
+
+  .features-content p.hidden-sm {
+    display: block;
+  }
+
+  .features-content a {
+    letter-spacing: 0px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+}
+
+/** Start Signature pad **/
+.signature-pad {
+  display: block;
+  cursor: crosshair;
+  border: 2px solid #0e2e50;
+  border-radius: 4px;
+}
+/** End Signature pad **/
+
+/*Start Code Orientacion*/
+.main {
+  width: 330px;
+  height: 310px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  background: lightgray;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  width: 170px;
+  height: 340px;
+  background: rgba(75, 68, 68, 0.05);
+}
+
+.quote {
+  padding: 20px;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.main i {
+  font-size: 90px;
+  color: rgb(44, 44, 119);
+  position: relative;
+  top: 20px;
+}
+
+.submit {
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: var(--gradient) !important;
+  text-decoration: none;
+  transition: all .4s ease;
+}
+
+.blog_right_sidebar,
+.comment-form {
+  background: #fbf9ff;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.boxed-btn {
+  background: #fff;
+  color: #0e2e50 !important;
+  display: inline-block;
+  padding: 18px 44px;
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #0e2e50;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #0e2e50;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.boxed-btn:hover {
+  transition: all .5s ease-out 0.1s;
+  background: #0e2e50;
+  color: #f8f8f8 !important;
+  display: inline-block;
+  padding: 18px 44px;
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1.5px solid #fdfdfd;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #0e2e50;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and(max-width:991px) {
+  .main.mainComentario {
+    width: 100%;
+  }
+}
+
+/*End Code Orientacion*/
+
+/**Start Psicologia, pastoral and contactos**/
+
+.author {
+  margin-bottom: 30px;
+  font-size: 17px;
+  color: rgb(92, 92, 165);
+  text-align: right;
+  margin-right: 20px;
+}
+
+.services-group {
+  display: flex;
+  justify-content: center;
+  margin: 45px 0;
+}
+
+.contact-1 {
+  background-color: #f5a425;
+  padding: 35px 25px;
+  margin: 0 10px;
+  border-radius: 15px;
+}
+
+.contact-1 h3 {
+  font-size: 29px;
+  text-align: center;
+  color: #000000;
+}
+
+.contact-1 h6 {
+  color: #2c347a;
+  text-align: center;
+  font-size: 19px;
+}
+
+.contact-1 img {
+  width: 200px;
+}
+
+.contact-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 0;
+}
+
+
+@media (max-width:991px) {
+  .main {
+    margin: 0 0 20px 0;
+  }
+
+  .main::before {
+    width: 142.5px;
+  }
+
+  .contac-1 {
+    margin: 0 0 20px 0;
+  }
+
+}
+
+/**End Psicologia, pastoral and contactos**/
+
+
+
+
+/* Video fin de semana*/
+
+
+/*Color de fondo*/
+section.videofinsemana {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ffffff;
+  padding: 120px 0px;
+}
+
+/*Cambia el color del contenido*/
+section.videofinsemana .left-content {
+  color: #212529;
+}
+
+/*Cambia el Color de del span*/
+section.videofinsemana .left-content span {
+  color: #212529;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+section.videofinsemana .left-content h6 {
+  color: #212529;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+
+
+}
+
+/* Titulo Parte 1*/
+section.videofinsemana .left-content h4 {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #212529;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  margin-bottom: 20px;
+
+}
+
+/* Titulo Parte 2*/
+section.videofinsemana .left-content h4 em {
+  font-style: normal;
+  color: #f5a425;
+}
+
+section.videofinsemana .left-content .main-button {
+  margin-top: 30px;
+}
+
+.vivideofinsemanadeo-item {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0px auto 0;
+}
+
+@media screen and (max-width: 767px) {
+
+  section.videofinsemana .left-content {
+    margin-bottom: 45px;
+  }
+
+  section.videofinsemana .first-item .first-content h4,
+  section.videofinsemana .second-item .second-content h4 {
+    text-align: center;
+  }
+
+}
+
+.videofinsemana-item figure {
+  position: relative;
+  width: 100%;
+  font-size: 0;
+}
+
+.vidvideofinsemanaeo-item figure img {
+  width: 100%;
+}
+
+.videofinsemana-item figure a:before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  margin-top: -32.5px;
+  margin-left: -32.5px;
+  border-radius: 50%;
+  background-color: #f5a425;
+  z-index: 10;
+}
+
+.videofinsemana-item figure a:after {
+  content: '';
+  position: absolute;
+  bottom: 27.5px;
+  right: 20px;
+  margin-top: -12.5px;
+  margin-left: -7px;
+  border: solid 13px transparent;
+  border-left: solid 20px;
+  border-left-color: #fff;
+  z-index: 10;
+}
+
+.videofinsemana-item figure a:hover:before {
+  background-color: #f5a425;
+}
+
+.videofinsemana-item .videofinsemana-caption {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(250, 250, 250, 0.75);
+  height: 80px;
+  width: 100%;
+  padding: 27px 30px;
+  bottom: 0;
+}
+
+.videofinsemana-item .videofinsemana-caption h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+
+
+/* Video */
+/* Video */
+/*responsive videos admisiones*/
+@media (min-width: 400px) {
+  .card-body {
+    padding: 20px;
+  }
+
+  .col {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .card {
+    margin: 0 0 20px 0;
+
+  }
+
+  @media screen and(max-width: 500px) {
+    .card {
+      width: 400px;
+    }
+  }
+}

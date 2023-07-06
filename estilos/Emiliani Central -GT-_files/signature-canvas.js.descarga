@@ -1,0 +1,82 @@
+//Resize Canvas
+const changeSize = () => {
+    const width = document.documentElement.clientWidth;
+    if (width > 991) {
+        canvas.setAttribute("height", "200");
+        canvas.setAttribute("width", "600");
+    }
+    else if (width > 449) {
+        canvas.setAttribute("height", "200");
+        canvas.setAttribute("width", "400");
+    }
+    else {
+        canvas.setAttribute("height", "200");
+        canvas.setAttribute("width", "350");
+    }
+}
+
+
+//Resize canvas at this events
+window.onload = changeSize;
+window.addEventListener('resize', changeSize);
+
+
+//Elements from the canvas
+const canvas = document.querySelector('canvas');
+const form = document.querySelector('.signature-pad');
+const clearButton = document.querySelector('.clear-button');
+const ctx = canvas.getContext('2d');
+
+
+//Canvas line properties
+let writingMode = false;
+ctx.lineWidth = 3;
+ctx.lineJoin = ctx.lineCap = 'round';
+
+
+//Drawing functions
+const handlePointerDown = (event) => {
+    writingMode = true;
+    ctx.beginPath();
+    const [positionX, positionY] = getCursorPosition(event);
+    ctx.moveTo(positionX, positionY);
+}
+
+const handlePointerUp = () => {
+    writingMode = false;
+}
+
+const handlePointerMove = (event) => {
+    if (!writingMode) return
+    const [positionX, positionY] = getCursorPosition(event);
+    ctx.lineTo(positionX, positionY);
+    ctx.stroke();
+}
+
+const getCursorPosition = (event) => {
+    positionX = event.clientX - event.target.getBoundingClientRect().x;
+    positionY = event.clientY - event.target.getBoundingClientRect().y;
+    return [positionX, positionY];
+}
+
+
+//Clear button
+const clear = (event) => {
+    canvas.width = canvas.width;
+}
+
+
+//Prevent scrolling when touching canvas
+const handleTouchMove = (event) => {
+    if (event.target == canvas) {
+        event.preventDefault();
+    }
+}
+
+
+//Draw on canvas at this events
+clearButton.addEventListener('click', clear);
+canvas.addEventListener("touchmove", handleTouchMove, { passive: false });
+canvas.addEventListener('pointerdown', handlePointerDown, { passive: true });
+document.body.addEventListener('pointerup', handlePointerUp, { passive: true });
+canvas.addEventListener('pointermove', handlePointerMove, { passive: true });
